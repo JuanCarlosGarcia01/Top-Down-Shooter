@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 8748672761446101740}
   - component: {fileID: 8748672761446101779}
   - component: {fileID: 8748672761446101778}
-  - component: {fileID: 8748672761446101736}
-  - component: {fileID: 8748672761446101742}
-  - component: {fileID: 8748672761446101743}
+  - component: {fileID: 627469087465580645}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Enemy
@@ -99,20 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &8748672761446101736
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8748672761446101777}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8748672761446101742
+--- !u!114 &627469087465580645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,19 +106,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 8748672761446101777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aab5ac4310d1884fbc3645caf35ecfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ab54c665bb448644b6aac84bf5d104e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 10
---- !u!114 &8748672761446101743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8748672761446101777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e341b1441c2c57f4f83a53857dc59a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 5
+  sightRange: 0
+  attackRange: 0
+  playerInSightRange: 0
+  playerInAttackRange: 0
